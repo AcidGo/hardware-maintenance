@@ -31,6 +31,7 @@ var (
 func init() {
     flag.StringVar(&verdor, "V", "", "verdor name, like Lenovo, Huawei, IBM ...")
     flag.StringVar(&serialNumber, "sn", "", "the serial number of target machine")
+    flag.Usage = flagUsage
     flag.Parse()
 }
 
